@@ -1,5 +1,5 @@
 import { Text, TouchableOpacity } from "react-native";
-import { ButtonStyles, TextStyles } from "../assets/styles";
+import { ButtonStyles, CellStyles, TextStyles } from "../assets/styles";
 
 export const PrimaryButton = (props) => (
   <TouchableOpacity
@@ -7,5 +7,14 @@ export const PrimaryButton = (props) => (
     onPress={props.navigation}
   >
     <Text style={TextStyles.primaryButtonLabel}>{props.title}</Text>
+  </TouchableOpacity>
+);
+
+export const DeleteButton = (props) => (
+  <TouchableOpacity
+    style={CellStyles.vinCellDeleteButton}
+    onPress={props.delete}
+  >
+    <Text style={CellStyles.vinCellDeleteButtonText}>Delete</Text>
   </TouchableOpacity>
 );

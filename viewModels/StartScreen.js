@@ -20,7 +20,7 @@ export const StartScreen = ({ navigation }) => {
     <View style={ViewStyle.container}>
       <PrimaryButton
         navigation={() => navigation.navigate(NavigationStrings.SCANNER)}
-        title="Scan a VIN"
+        title="Scan VIN"
       />
       {vins !== null && (
         <PrimaryButton

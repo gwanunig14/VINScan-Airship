@@ -50,11 +50,24 @@ export const WeakSignal = (props) => (
     footer={
       <DialogFooter>
         <DialogButton text="Okay" onPress={props.dismissDialog} />
+        <DialogButton text="Saved VIN List" onPress={props.VINList} />
       </DialogFooter>
     }
   />
 );
 
+export const DeleteDialog = (props) => (
+  <MasterDialog
+    title={`Are you sure you want to delete VIN ${props.vin}?`}
+    visible={props.visible}
+    footer={
+      <DialogFooter>
+        <DialogButton text="Yes" onPress={props.delete} />
+        <DialogButton text="No" onPress={props.dismissDialog} />
+      </DialogFooter>
+    }
+  />
+);
 const MasterDialog = (props) => (
   <Dialog footer={props.footer} visible={props.visible}>
     <DialogContent>

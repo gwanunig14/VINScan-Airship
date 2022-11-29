@@ -57,6 +57,7 @@ export const CarScreen = ({ navigation, route }) => {
         <WeakSignal
           visible={!enoughSignal}
           dismissDialog={() => setEnoughSignal(true)}
+          VINList={() => navigation.navigate(NavigationStrings.VIN)}
         />
         <VINDetailLabel title="No vehicle info at this time. Sorry." />
       </View>

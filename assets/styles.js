@@ -29,19 +29,40 @@ export const CellStyles = StyleSheet.create({
     marginStart: -16,
   },
   vinCell: {
-    padding: 16,
     width: "100%",
     height: 80,
-    justifyContent: "center",
-    alignItems: "left",
+    alignItems: "right",
     borderBottomWidth: 2,
     borderColor: "red",
+    flexDirection: "row",
+    justifyContent: "center",
+  },
+  vinCellDeleteButton: {
+    height: "80%",
+    backgroundColor: "red",
+    width: 100,
+    borderRadius: 8,
+    marginEnd: 16,
+    marginTop: 8,
+    justifyContent: "center",
+  },
+  vinCellDeleteButtonText: {
+    textAlign: "center",
+    color: "white",
+    fontSize: 20,
   },
 });
 
 export const TextStyles = StyleSheet.create({
   primaryButtonLabel: { color: "white", fontSize: 24, textAlign: "center" },
-  vinCellTitle: { color: "red", fontSize: 24, textAlign: "center" },
+  vinCellTitle: {
+    color: "red",
+    fontSize: 24,
+    textAlign: "left",
+    marginTop: 8,
+    padding: 16,
+    flex: 1,
+  },
   vinLabel: { color: "red", marginBottom: 8, fontSize: 24 },
   vinScanLabel: {
     color: "red",

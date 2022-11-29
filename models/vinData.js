@@ -86,10 +86,18 @@ export const saveVIN = async (vin) => {
   }
 };
 
-const saveToLocalData = async (key, value) => {
+export const saveToLocalData = async (key, value) => {
   try {
     const newValue = JSON.stringify(value);
     await AsyncStorage.setItem(key, newValue);
+  } catch (e) {
+    console.log(e);
+  }
+};
+
+export const removeVehicle = async (key) => {
+  try {
+    await AsyncStorage.removeItem(key);
   } catch (e) {
     console.log(e);
   }
