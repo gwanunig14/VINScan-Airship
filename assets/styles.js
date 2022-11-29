@@ -10,7 +10,7 @@ export const ViewStyle = StyleSheet.create({
   },
 });
 
-export const ButtonStyle = StyleSheet.create({
+export const ButtonStyles = StyleSheet.create({
   primaryButton: {
     alignItems: "center",
     width: "100%",
@@ -23,7 +23,7 @@ export const ButtonStyle = StyleSheet.create({
   },
 });
 
-export const CellStyle = StyleSheet.create({
+export const CellStyles = StyleSheet.create({
   vinTableViewStyle: {
     width: "110%",
     marginStart: -16,
@@ -39,7 +39,7 @@ export const CellStyle = StyleSheet.create({
   },
 });
 
-export const textStyle = StyleSheet.create({
+export const TextStyles = StyleSheet.create({
   primaryButtonLabel: { color: "white", fontSize: 24, textAlign: "center" },
   vinCellTitle: { color: "red", fontSize: 24, textAlign: "center" },
   vinLabel: { color: "red", marginBottom: 8, fontSize: 24 },
@@ -49,6 +49,7 @@ export const textStyle = StyleSheet.create({
     fontSize: 20,
     textAlign: "center",
     paddingTop: 32,
+    lineHeight: 32,
   },
   storyText: { fontSize: 24, lineHeight: 24, marginBottom: 8 },
   vinEditText: {

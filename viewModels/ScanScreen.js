@@ -3,7 +3,7 @@ import { Text, View, StyleSheet, TextInput, Keyboard } from "react-native";
 import { BarCodeScanner } from "expo-barcode-scanner";
 import { saveVIN } from "../models/vinData";
 import { NavigationStrings } from "../assets/strings";
-import { textStyle, ViewStyle } from "../assets/styles";
+import { TextStyles, ViewStyle } from "../assets/styles";
 import { CorrectScanDialog, IncorrectScanDialog } from "../views/Dialogs";
 import { PrimaryButton } from "../views/Buttons";
 
@@ -75,7 +75,7 @@ export const ScanScreen = ({ navigation }) => {
           <TextInput
             defaultValue={currentVin}
             onChangeText={(newText) => setCurrentVin(newText)}
-            style={textStyle.vinEditText}
+            style={TextStyles.vinEditText}
           />
           <PrimaryButton
             title={"Fixed"}

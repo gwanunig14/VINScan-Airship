@@ -7,7 +7,7 @@ import { VINScanDialogLabel } from "./Labels";
 
 export const CorrectScanDialog = (props) => (
   <MasterDialog
-    title={`VIN ${props.vin} has been scanned`}
+    title={`VIN has been scanned. ${props.vin}`}
     visible={props.visible}
     footer={
       <DialogFooter>
@@ -43,7 +43,9 @@ export const IncorrectScanDialog = (props) => {
 
 export const WeakSignal = (props) => (
   <MasterDialog
-    title="Your cell signal is too weak to access the VIN database. Please try again later."
+    title={
+      "Your cell signal is too weak to access the VIN database. Please try again later."
+    }
     visible={props.visible}
     footer={
       <DialogFooter>

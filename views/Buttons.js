@@ -1,11 +1,11 @@
 import { Text, TouchableOpacity } from "react-native";
-import { ButtonStyle, textStyle } from "../assets/styles";
+import { ButtonStyles, TextStyles } from "../assets/styles";
 
 export const PrimaryButton = (props) => (
   <TouchableOpacity
-    style={ButtonStyle.primaryButton}
+    style={ButtonStyles.primaryButton}
     onPress={props.navigation}
   >
-    <Text style={textStyle.primaryButtonLabel}>{props.title}</Text>
+    <Text style={TextStyles.primaryButtonLabel}>{props.title}</Text>
   </TouchableOpacity>
 );

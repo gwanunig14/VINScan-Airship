@@ -41,7 +41,7 @@ export const StoryScreen = ({ navigation, route }) => {
           carInfo[VINData.CLASS]
         } frame and ${carInfo[VINData.CYLINDERS]} cylinder ${
           carInfo[VINData.FUELTYPE]
-        } fed engine making her engine purr, she's a prime example of a ${
+        } fed engine making her purr. A prime example of a ${
           carInfo[VINData.TYPE]
         }.`}
       />
